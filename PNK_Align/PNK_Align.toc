@@ -1,0 +1,12 @@
+## Title: |cFF22E6D2PNK_Align|r
+## Notes: Draw grids for aligning UI elements.
+## Interface: 30300
+## Version: 0.1alpha
+## Author: Hurubon
+## DefaultState: enabled
+
+## RequiredDeps: PNK_Stack
+
+config.lua
+core.lua
+init.lua

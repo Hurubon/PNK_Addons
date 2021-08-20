@@ -1,0 +1,12 @@
+## Title: |cFFF22484PNK_Timer|r
+## Notes: A generic timer library.
+## Interface: 30300
+## Version: 1.0beta
+## Author: Hurubon
+## DefaultState: enabled
+
+## RequiredDeps: PNK_Stack
+
+config.lua
+core.lua
+init.lua

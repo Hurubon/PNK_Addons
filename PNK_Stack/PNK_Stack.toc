@@ -1,0 +1,11 @@
+## Title: |cFFF22484PNK_Stack|r
+## Notes: A simple C++-like stack implementation for WoW API.
+## Interface: 30300
+## Version: 1.0beta
+## Author: Hurubon
+## DefaultState: enabled
+
+config.lua
+core.lua
+test.lua
+init.lua

@@ -1,0 +1,12 @@
+## Title: |cFFF5AE3DDuelist|r
+## Notes: Always say GG after a duel!
+## Interface: 30300
+## Version: 1.0beta
+## Author: Hurubon
+## DefaultState: enabled
+
+## SavedVariables: Duelist_PostDuelMessage
+
+config.lua
+core.lua
+init.lua

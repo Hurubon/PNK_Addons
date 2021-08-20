@@ -1,0 +1,37 @@
+{namespace} =
+{{
+        meta =
+        {{
+                name      = '{namespace}',
+                author    = '{author}',
+                interface = '{interface}',
+
+                version =
+                {{
+                        major = 0,
+                        minor = 1,
+                        stage = 'alpha',
+                }},
+
+                theme =
+                {{
+                        hex = '{hex}',
+                        WowRGB = function()
+                                return  {r},
+                                        {g},
+                                        {b};
+                        end,
+                }},
+        }},
+}};
+
+function {namespace}.Print(...)
+        local prefix = string.format(
+                '[|cFF%s%s|r]:',
+                {namespace}.meta.theme.hex,
+                {namespace}.meta.name
+        );
+        local message = string.join(' ', prefix, tostringall(...));
+
+        DEFAULT_CHAT_FRAME:AddMessage(message);
+end

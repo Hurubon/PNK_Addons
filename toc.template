@@ -1,0 +1,9 @@
+## Title: |cFF{colour}{addon}|r
+## Notes:
+## Interface: {interface}
+## Version: 0.1alpha
+## Author: {author}
+## DefaultState: enabled
+
+config.lua
+init.lua

@@ -1,0 +1,9 @@
+## Title: |cFFF5AE3DCombatLogFix|r
+## Interface: 30300
+## Version: 1.0beta
+## Author: Hurubon
+## DefaultState: enabled
+
+config.lua
+core.lua
+init.lua

@@ -1,0 +1,9 @@
+## Title: |cFF22E6D2PNK_Scratchpad|r
+## Interface: 30300
+## Version: 1.0beta
+## Author: Hurubon
+## DefaultState: enabled
+
+config.lua
+scratch.lua
+init.lua
