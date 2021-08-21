@@ -4,19 +4,19 @@ local NAME_PREFIX = 'PNK_TimerName_';
 --[[---------------------------------------------------------------------------
 	Local functions
 --]]---------------------------------------------------------------------------
-local function GetPooledOrCreate(name)
+local function GetExistingOrCreate(name)
 	local name     = NAME_PREFIX .. name;
 	local existing = _G[name];
 	local pooled   = timerStack:Top();
 
 	local result = existing or pooled or CreateFrame('Frame', name);
 	result.name  = name;
-	_G[name]     = name;
 
 	if pooled then
 		timerStack:Pop();
 	end
 
+	_G[name] = result;
 	return result;
 end
 
@@ -30,7 +30,7 @@ function PNK_Timer.Start(
 	increment,  -- number:   How much to increment the time.
 	Action      -- function: What to do when the countdown ends.
 )
-	local timer = GetPooledOrCreate(name);
+	local timer = GetExistingOrCreate(name);
 
 	timer.sinceUpdate = 0;
 	timer.countdown   = countdown;
