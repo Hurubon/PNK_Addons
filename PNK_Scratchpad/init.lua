@@ -26,7 +26,16 @@ function PNK_Scratchpad.commands.RUN(...)
 	end
 end
 
+function PNK_Scratchpad.commands.PRINT(...)
+	local code = string.join(' ');
+	local f, errorMessage = loadstring(code, 'scratch');
 
+	if errorMessage then
+		PNK_Scratchpad.Print(errorMessage);
+	else
+		f();
+	end
+end
 
 --[[---------------------------------------------------------------------------
 	Handler
