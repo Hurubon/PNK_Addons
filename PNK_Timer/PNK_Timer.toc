@@ -1,7 +1,7 @@
 ## Title: |cFFF22484PNK_Timer|r
 ## Notes: A generic timer library.
 ## Interface: 30300
-## Version: 1.0beta
+## Version: 1.1beta
 ## Author: Hurubon
 ## DefaultState: enabled
 

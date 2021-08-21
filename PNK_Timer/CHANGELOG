@@ -1,0 +1,3 @@
+v1.1beta:
+	Fixed bug in GetExistingOrCreate. Instead of the timer, its name
+	was being assigned to the entry in the global table.
