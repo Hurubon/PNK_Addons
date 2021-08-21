@@ -1,3 +1,3 @@
 function Duelist.OnDuelFinish()
-	SendChatMessage(Duelsit_PostDuelMessage, 'SAY');
+	SendChatMessage(Duelist_PostDuelMessage, 'SAY');
 end
