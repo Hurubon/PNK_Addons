@@ -1,3 +1,5 @@
 function Duelist.OnDuelFinish()
-	SendChatMessage(Duelist_PostDuelMessage, 'SAY');
+	if UnitHealth('player') / UnitMaxHealth('player') < 0.5 then
+		SendChatMessage(Duelist_PostDuelMessage, 'SAY');
+	end
 end
